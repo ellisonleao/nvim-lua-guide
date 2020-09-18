@@ -10,10 +10,10 @@ Este guia assume que você está usando o [build noturno] mais recente (https://
 
 Se você ainda não está familiarizado com o idioma, existem muitos recursos para começar:
 
-- A página [Aprenda X em Y minutos sobre Lua] (https://learnxinyminutes.com/docs/lua/) deve fornecer uma visão geral rápida dos fundamentos
-- Se os vídeos são mais do seu agrado, Derek Banas tem um [tutorial de 1 hora sobre o idioma] (https://www.youtube.com/watch?v=iMacxZQMPXs)
-- O [wiki de lua-users] (http://lua-users.org/wiki/LuaDirectory) está cheio de informações úteis sobre todos os tipos de tópicos relacionados a Lua
-- O [manual oficial de referência para Lua] (https://www.lua.org/manual/5.1/) deve fornecer o tour mais completo do idioma
+- A página [Aprenda X em Y minutos sobre Lua](https://learnxinyminutes.com/docs/lua/) deve fornecer uma visão geral rápida dos fundamentos
+- Se os vídeos são mais do seu agrado, Derek Banas tem um [tutorial de 1 hora sobre o idioma](https://www.youtube.com/watch?v=iMacxZQMPXs)
+- O [wiki de lua-users](http://lua-users.org/wiki/LuaDirectory) está cheio de informações úteis sobre todos os tipos de tópicos relacionados a Lua
+- O [manual oficial de referência para Lua](https://www.lua.org/manual/5.1/) deve fornecer o tour mais completo do idioma
 
 Deve-se notar também que Lua é uma linguagem muito limpa e simples. É fácil de aprender, especialmente se você tiver experiência com linguagens de script semelhantes, como JavaScript. Você já deve conhecer mais Lua do que imagina!
 
@@ -23,21 +23,21 @@ Nota: a versão de Lua que Neovim embute é LuaJIT 2.1.0, que mantém a compatib
 
 Alguns tutoriais já foram escritos para ajudar as pessoas a escrever plug-ins em Lua. Alguns deles ajudaram bastante na redação deste guia. Muito obrigado aos seus autores.
 
-- [teukka.tech - De init.vim para init.lua] (https://teukka.tech/luanvim.html)
-- [2n.pl - Como escrever plug-ins neovim em Lua] (https://www.2n.pl/blog/how-to-write-neovim-plugins-in-lua.md)
-- [2n.pl - Como fazer interface do usuário para plug-ins neovim em Lua] (https://www.2n.pl/blog/how-to-make-ui-for-neovim-plugins-in-lua)
-- [ms-jpq - Tutorial Neovim Async] (https://ms-jpq.github.io/neovim-async-tutorial/)
+- [teukka.tech - De init.vim para init.lua](https://teukka.tech/luanvim.html)
+- [2n.pl - Como escrever plug-ins neovim em Lua](https://www.2n.pl/blog/how-to-write-neovim-plugins-in-lua.md)
+- [2n.pl - Como fazer interface do usuário para plug-ins neovim em Lua](https://www.2n.pl/blog/how-to-make-ui-for-neovim-plugins-in-lua)
+- [ms-jpq - Tutorial Neovim Async](https://ms-jpq.github.io/neovim-async-tutorial/)
 
 ### Plugins complementares
 
-- [Vimpeccable] (https://github.com/svermeulen/vimpeccable) - Plugin para ajudar a escrever seu .vimrc em Lua
-- [plenary.nvim] (https://github.com/nvim-lua/plenary.nvim) - Todas as funções lua que não quero escrever duas vezes
-- [popup.nvim] (https://github.com/nvim-lua/popup.nvim) - Uma implementação da API Popup do vim no Neovim
-- [nvim_utils] (https://github.com/norcalli/nvim_utils)
-- [nvim-luadev] (https://github.com/bfredl/nvim-luadev) - console REPL / debug para plug-ins nvim lua
-- [nvim-luapad] (https://github.com/rafcamlet/nvim-luapad) - Bloco de rascunho neovim interativo em tempo real para mecanismo lua integrado
-- [nlua.nvim] (https://github.com/tjdevries/nlua.nvim) - Desenvolvimento Lua para Neovim
-- [BetterLua.vim] (https://github.com/euclidianAce/BetterLua.vim) - Melhor destaque da sintaxe Lua no Vim / NeoVim
+- [Vimpeccable](https://github.com/svermeulen/vimpeccable) - Plugin para ajudar a escrever seu .vimrc em Lua
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Todas as funções lua que não quero escrever duas vezes
+- [popup.nvim](https://github.com/nvim-lua/popup.nvim) - Uma implementação da API Popup do vim no Neovim
+- [nvim_utils](https://github.com/norcalli/nvim_utils)
+- [nvim-luadev](https://github.com/bfredl/nvim-luadev) - console REPL / debug para plug-ins nvim lua
+- [nvim-luapad](https://github.com/rafcamlet/nvim-luapad) - Bloco de rascunho neovim interativo em tempo real para mecanismo lua integrado
+- [nlua.nvim](https://github.com/tjdevries/nlua.nvim) - Desenvolvimento Lua para Neovim
+- [BetterLua.vim](https://github.com/euclidianAce/BetterLua.vim) - Melhor destaque da sintaxe Lua no Vim / NeoVim
 
 ## Onde colocar os arquivos Lua
 
@@ -90,8 +90,8 @@ Para mais informações: `: help lua-require`
 
 Ao contrário dos arquivos .vim, os arquivos .lua não são originados automaticamente de diretórios em seu `runtimepath`. Em vez disso, você deve obtê-los / solicitá-los do Vimscript. Existem planos para adicionar a opção de carregar um arquivo `init.lua` como uma alternativa para` init.vim`:
 
-- [Problema nº 7895] (https://github.com/neovim/neovim/issues/7895)
-- [solicitação pull correspondente] (https://github.com/neovim/neovim/pull/12235)
+- [Problema nº 7895](https://github.com/neovim/neovim/issues/7895)
+- [solicitação pull correspondente](https://github.com/neovim/neovim/pull/12235)
 
 #### Dicas
 
@@ -563,7 +563,7 @@ Veja também:
 - `: help: setglobal`
 - `: help global-local`
 
-** TODO **: Por que isso acontece? Todas as opções locais de buffer se comportam dessa maneira? Pode estar relacionado a [neovim / neovim # 7658] (https://github.com/neovim/neovim/issues/7658) e [vim / vim # 2390] (https://github.com/vim/vim/issues / 2390). Também para opções de janela local: [neovim / neovim # 11525] (https://github.com/neovim/neovim/issues/11525) e [vim / vim # 4945] (https://github.com/vim/ vim / issues / 4945)
+** TODO **: Por que isso acontece? Todas as opções locais de buffer se comportam dessa maneira? Pode estar relacionado a [neovim / neovim # 7658](https://github.com/neovim/neovim/issues/7658) e [vim / vim # 2390](https://github.com/vim/vim/issues / 2390). Também para opções de janela local: [neovim / neovim # 11525](https://github.com/neovim/neovim/issues/11525) e [vim / vim # 4945](https://github.com/vim/ vim / issues / 4945)
 
 ## Gerenciando variáveis ​​internas do vim
 
@@ -654,7 +654,7 @@ echo g: variável
 
 Este é um problema conhecido:
 
-- [Edição nº 12544] (https://github.com/neovim/neovim/issues/12544)
+- [Edição nº 12544](https://github.com/neovim/neovim/issues/12544)
 
 ## Chamando funções Vimscript
 
@@ -702,7 +702,7 @@ vim.fn.jobstart ('ls', {on_stdout = print_stdout})
 Hashes `#` não são caracteres válidos para identificadores em Lua, então funções de carregamento automático devem ser chamadas com esta sintaxe:
 
 `` `lua
-vim.fn ['my # autoload # function'] ()
+vim.fn ['my # autoload # function']()
 `` `
 
 Veja também:
@@ -809,7 +809,7 @@ vim.api.nvim_buf_del_keymap (0, 'i', '<Tab>')
 
 Atualmente não há interface para criar comandos de usuário em Lua. Mas está planejado:
 
-- [Solicitação pull # 11613] (https://github.com/neovim/neovim/pull/11613)
+- [Solicitação pull # 11613](https://github.com/neovim/neovim/pull/11613)
 
 Por enquanto, é melhor você criar comandos no Vimscript.
 
@@ -817,16 +817,16 @@ Por enquanto, é melhor você criar comandos no Vimscript.
 
 Augroups e autocommands ainda não têm uma interface, mas está sendo trabalhada:
 
-- [Solicitação pull # 12378] (https://github.com/neovim/neovim/pull/12378)
+- [Solicitação pull # 12378](https://github.com/neovim/neovim/pull/12378)
 
-Enquanto isso, você pode criar comandos automáticos no Vimscript ou usar [este wrapper de norcalli / nvim_utils] (https://github.com/norcalli/nvim_utils/blob/master/lua/nvim_utils.lua#L554-L567)
+Enquanto isso, você pode criar comandos automáticos no Vimscript ou usar [este wrapper de norcalli / nvim_utils](https://github.com/norcalli/nvim_utils/blob/master/lua/nvim_utils.lua#L554-L567)
 
 ## Definindo sintaxe / destaques
 
 A sintaxe API ainda é um trabalho em andamento. Aqui estão algumas dicas:
 
-- [Problema nº 9876] (https://github.com/neovim/neovim/issues/9876)
-- [tjdevries / colorbuddy.vim, uma biblioteca para criar esquemas de cores em Lua] (https://github.com/tjdevries/colorbuddy.vim)
+- [Problema nº 9876](https://github.com/neovim/neovim/issues/9876)
+- [tjdevries / colorbuddy.vim, uma biblioteca para criar esquemas de cores em Lua](https://github.com/tjdevries/colorbuddy.vim)
 - `: help lua-treesitter`
 
 ## Dicas e recomendações gerais
@@ -834,9 +834,9 @@ A sintaxe API ainda é um trabalho em andamento. Aqui estão algumas dicas:
 **FAÇAM**:
 - Recarregamento de módulos a quente
 - `vim.validate ()`?
-- Adicionar coisas sobre testes de unidade? Eu sei que o Neovim usa o framework [busted] (https://olivinelabs.com/busted/), mas não sei como usá-lo para plug-ins
+- Adicionar coisas sobre testes de unidade? Eu sei que o Neovim usa o framework [busted](https://olivinelabs.com/busted/), mas não sei como usá-lo para plug-ins
 - Melhores Práticas? Não sou um mago da Lua, então não saberia
-- Como usar pacotes LuaRocks ([wbthomason / packer.nvim] (https://github.com/wbthomason/packer.nvim)?)
+- Como usar pacotes LuaRocks ([wbthomason / packer.nvim](https://github.com/wbthomason/packer.nvim)?)
 
 ## Diversos
 
@@ -844,29 +844,29 @@ A sintaxe API ainda é um trabalho em andamento. Aqui estão algumas dicas:
 
 `vim.loop` é o módulo que expõe a API LibUV. Alguns recursos:
 
-- [Documentação oficial para LibUV] (https://docs.libuv.org/en/v1.x/)
-- [documentação Luv] (https://github.com/luvit/luv/blob/master/docs.md)
-- [teukka.tech - Usando LibUV em Neovim] (https://teukka.tech/vimloop.html)
+- [Documentação oficial para LibUV](https://docs.libuv.org/en/v1.x/)
+- [documentação Luv](https://github.com/luvit/luv/blob/master/docs.md)
+- [teukka.tech - Usando LibUV em Neovim](https://teukka.tech/vimloop.html)
 
 Veja também:
 - `: help vim.loop`
 
 ### vim.lsp
 
-`vim.lsp` é o módulo que controla o cliente LSP embutido. O repositório [neovim / nvim-lspconfig] (https://github.com/neovim/nvim-lspconfig/) contém configurações padrão para servidores de idiomas populares.
+`vim.lsp` é o módulo que controla o cliente LSP embutido. O repositório [neovim / nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/) contém configurações padrão para servidores de idiomas populares.
 
 Você também pode dar uma olhada nos plug-ins construídos em torno do cliente LSP:
-- [nvim-lua / completed-nvim] (https://github.com/nvim-lua/completion-nvim)
-- [nvim-lua / diagnostic-nvim] (https://github.com/nvim-lua/diagnostic-nvim)
+- [nvim-lua / completed-nvim](https://github.com/nvim-lua/completion-nvim)
+- [nvim-lua / diagnostic-nvim](https://github.com/nvim-lua/diagnostic-nvim)
 
 Veja também:
 - `: help lsp`
 
 ### vim.treesitter
 
-`vim.treesitter` é o módulo que controla a integração da biblioteca [Tree-sitter] (https://tree-sitter.github.io/tree-sitter/) no Neovim. Se você quiser saber mais sobre o Tree-sitter, pode se interessar por esta [apresentação (38:37)] (https://www.youtube.com/watch?v=Jes3bD6P0To).
+`vim.treesitter` é o módulo que controla a integração da biblioteca [Tree-sitter](https://tree-sitter.github.io/tree-sitter/) no Neovim. Se você quiser saber mais sobre o Tree-sitter, pode se interessar por esta [apresentação (38:37)](https://www.youtube.com/watch?v=Jes3bD6P0To).
 
-A organização [nvim-treesitter] (https://github.com/nvim-treesitter/) hospeda vários plug-ins aproveitando a biblioteca.
+A organização [nvim-treesitter](https://github.com/nvim-treesitter/) hospeda vários plug-ins aproveitando a biblioteca.
 
 Veja também:
 - `: help lua-treesitter`
@@ -875,13 +875,13 @@ Veja também:
 
 Uma vantagem de usar Lua é que você não precisa realmente escrever código Lua! Há uma grande variedade de transpiladores disponíveis para o idioma.
 
-- [Moonscript] (https://moonscript.org/)
+- [Moonscript](https://moonscript.org/)
 
-Provavelmente um dos transpiladores mais conhecidos para Lua. Adiciona muitos recursos convenientes, como classes, compreensões de lista ou literais de função. O plugin [svermeulen / nvim-moonmaker] (https://github.com/svermeulen/nvim-moonmaker) permite que você escreva plugins Neovim e configuração diretamente no Moonscript.
+Provavelmente um dos transpiladores mais conhecidos para Lua. Adiciona muitos recursos convenientes, como classes, compreensões de lista ou literais de função. O plugin [svermeulen / nvim-moonmaker](https://github.com/svermeulen/nvim-moonmaker) permite que você escreva plugins Neovim e configuração diretamente no Moonscript.
 
-- [Fennel] (https://fennel-lang.org/)
+- [Fennel](https://fennel-lang.org/)
 
-Um lisp que compila para Lua. Você pode escrever configuração e plug-ins para Neovim no Fennel com o plug-in [Olical / aniseed] (https://github.com/Olical/aniseed). Additionally, the [Olical/conjure](https://github.com/Olical/conjure) plugin provides an interactive development environment that supports Fennel (among other languages).
+Um lisp que compila para Lua. Você pode escrever configuração e plug-ins para Neovim no Fennel com o plug-in [Olical / aniseed](https://github.com/Olical/aniseed). Additionally, the [Olical/conjure](https://github.com/Olical/conjure) plugin provides an interactive development environment that supports Fennel (among other languages).
 
 Other interesting projects:
 - [TypeScriptToLua/TypeScriptToLua](https://github.com/TypeScriptToLua/TypeScriptToLua)
