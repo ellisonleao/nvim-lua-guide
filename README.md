@@ -1,5 +1,7 @@
 # Getting started using Lua in Neovim
 
+Read this in other language: [Português](README.pt-br.md)
+
 ## Introduction
 
 The integration of Lua as a first-class language inside Neovim is shaping up to be one of its killer features. However, the amount of teaching material for learning how to write plugins in Lua is not as large as what you would find for writing them in Vimscript. This is an attempt at providing some basic information to get people started.
