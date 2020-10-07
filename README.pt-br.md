@@ -19,7 +19,7 @@ Deve-se notar também que o Lua é uma linguagem muito limpa e simples. É fáci
 
 Nota: a versão do Lua que o Neovim embute é LuaJIT 2.1.0, que mantém a compatibilidade com Lua 5.1 (com algumas extensões 5.2)
 
-### Tutoriais existentes para escrever em Lua com o Neovim
+### Tutoriais existentes para escrever códigos Lua para o Neovim
 
 Alguns tutoriais já foram criados para ajudar as pessoas a escrever plug-ins em Lua. Alguns deles ajudaram bastante na redação deste guia. Muito obrigado aos seus autores.
 
