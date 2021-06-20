@@ -307,7 +307,7 @@ Veja também:
 
 Esta variável só pode ser usada para chamar funções. O seguinte sempre gerará um erro:
 
-`` `vim
+```vim
 " As funções de pseudônimo não funcionam
 let LuaPrint = v:lua.print
 
