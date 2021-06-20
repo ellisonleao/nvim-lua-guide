@@ -158,7 +158,7 @@ Veja também:
 
 - `:help :luado`
 
-###: luafile
+### :luafile
 
 Este comando fornece um arquivo Lua.
 
